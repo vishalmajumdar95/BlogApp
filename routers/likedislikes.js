@@ -3,7 +3,7 @@ const router = express.Router();
 const LikeDislikeService = require("../services/likedislikes");
 const Server = new LikeDislikeService();
 
-const { authenticateToken } = require('../auth/jwt');
+const { authenticateToken } = require('../auths/jwt');
 
 
 // Home page

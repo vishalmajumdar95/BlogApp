@@ -3,7 +3,7 @@ const router = express.Router();
 const UserService = require("../services/users");
 const service = new UserService();
 
-const { generateToken } = require('../auth/jwt');
+const { generateToken } = require('../auths/jwt');
 
 // welcome route
 router.get('/homepage', (req, res) => {

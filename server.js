@@ -14,10 +14,8 @@ app.use("/user", userRouter);
 app.use("/blog", blogRouter)
 app.use("/likedislike", likedislikeRouter)
 
-const PORT = process.env.DB_PORT
+const PORT = process.env.DB_PORT || 2022
 
 app.listen(PORT, () => {
-    console.log(`Server is running on PORT ${PORT}`)
+    console.log(`Server is running on PORT ::`, PORT)
 })
-
-// https: //medium.com/code-to-express/login-and-signup-page-4a65fec162f1

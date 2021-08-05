@@ -5,6 +5,7 @@ function generateToken(userdata) {
     return jwt.sign({ userdata }, process.env.SECRET_KEY, { expiresIn: '1h' })
 }
 
+
 // AuthenticateToken
 function authenticateToken(req, res, next) {
     var authHeader = req.query.token || req.body.token || req.headers.cookie;
