@@ -1,6 +1,7 @@
 const LikeDislike = require("../models/likeDislikes");
 
 module.exports = class LikeDislikeService {
+
     async createLike(like) {
         const user = await LikeDislike.query().where("user_id", like.user_id)
         console.log(user)

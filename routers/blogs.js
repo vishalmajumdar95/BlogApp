@@ -69,4 +69,5 @@ router.delete("/deleteblog/:id", authenticateToken, (req, res) => {
     })
 });
 
+
 module.exports = router;

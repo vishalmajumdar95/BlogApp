@@ -2,6 +2,7 @@ const { Model } = require('objection');
 const knex = require('../config/db_config');
 Model.knex(knex);
 
+// LikeDislike Class
 class LikeDislike extends(Model) {
     static get tableName() {
         return 'likeDislike'

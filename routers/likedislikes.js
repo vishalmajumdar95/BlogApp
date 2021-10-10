@@ -11,7 +11,6 @@ router.get('/home', async(req, res) => {
     res.send({ "success": "Like Create successfully...." })
 })
 
-
 // create like 
 router.put('/like', authenticateToken, async(req, res) => {
     console.log(req.body);
@@ -23,7 +22,6 @@ router.put('/like', authenticateToken, async(req, res) => {
         res.send(err)
     })
 })
-
 
 // create dislike
 router.put('/dislike', authenticateToken, async(req, res) => {
